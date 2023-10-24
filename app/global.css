@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+:root {
+  /* Primarias */
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  /* Neutral */
+  --Very-dark-blue: hsl(217, 54%, 11%);
+  --Very-dark-blue-1: hsl(216, 50%, 16%);
+  --Very-dark-blue-2: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  /* Font */
+  --family: "Outfit", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very-dark-blue-1);
+  font-family: var(--family);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--Very-dark-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px 20px 0px;
+  width: 20%;
+  border-radius: 10px;
+}
+
+.img_logo {
+  width: 90%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.eye-svg {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.card:hover .eye-svg {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.title {
+  color: var(--White);
+  margin-bottom: 10px;
+  font-size: large;
+}
+
+.title:hover {
+  color: var(--Cyan);
+}
+
+.info {
+  color: var(--Soft-blue);
+  margin-bottom: 10px;
+}
+
+.data {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.data > .ETH {
+  color: var(--Cyan);
+}
+
+.data > .Days {
+  color: var(--Soft-blue);
+}
+
+hr {
+  margin: 20px 0px 20px 0px;
+}
+
+.content {
+  width: 90%;
+}
+
+.avatar_text {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.avatar {
+  width: 52px;
+  border-radius: 50%;
+  border: 2px solid var(--White);
+}
+
+.Creation {
+  color: var(--Soft-blue);
+}
+
+.Jules {
+  color: var(--White);
+}
+
+.Jules:hover {
+  color: var(--Cyan);
+}
+
+.attribution {
+  text-align: center;
+  color: var(--White);
+}
